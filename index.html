@@ -10,30 +10,40 @@
     <title>Mission 0</title>
 </head>
 <body>
+    <!-- Nav Start -->
     <nav>
-        <div class="left_side"><p>SN</p></div>
+        <div class="left_side">
+            <p>SN</p>
+        </div>
         <div class="right_side">
             <a href="#">Home</a>
-            <a href="#">About</a>
+            <a href="#about_content">About</a>
             <a href="#">Contact</a>
         </div>
     </nav>
+    <!-- Nav End -->
+
+    <!-- hero Start -->
     <div class="hero">
-        <h1>Welcome to my Page</h1>
-        <h2>This is a simple landing page built by me.</h2>
-        <button id="btn">Click Me</button>
+        <div class="hero_content">
+            <h1>Welcome to my Page</h1>
+            <h2>This is a simple landing page built by me.</h2>
+            <button onclick="window.location.href='#about_content'">Click Me</button>
+        </div>
     </div>
+    <!-- Hero End -->
+
+    <!-- About Start -->
     <div class="about">
-        <div class="about_Black">
-            <p>Hi, I'm Sagar.</p>
-        </div>
-        <div class="about_White">
-            
-            <p>I'm learning to become a full-stack developer.</p>
+        <div class="about_content" id="about_content">
+            <img src="img/profile.png" alt="Profile picture.">
+            <p>Hi, I'm <b style="color: orangered;">Sagar Nepali</b></p>
+            <i><p>"I am learning to become a <b style="color: orangered;">Full-Stack Developer</b>"</p></i>   
         </div>
     </div>
+    <!-- About End -->
+
     <footer>
-        <img src="img/profile.png" alt="Profile picture.">
         <p>© 2025 Sagar Nepali</p>
     </footer>
 </body>
