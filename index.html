@@ -1,51 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <title>Mission 0</title>
 </head>
+
 <body>
-    <!-- Nav Start -->
-    <nav>
-        <div class="left_side">
+    <header>
+        <div class="logo">
             <p>SN</p>
         </div>
-        <div class="right_side">
+            <img id="menu" src="img/menu.svg" alt="">
+        <!-- Nav Start -->
+        <nav class="navigation">
+
             <a href="#">Home</a>
-            <a href="#about_content">About</a>
+            <a href="#">About</a>
             <a href="#">Contact</a>
-        </div>
-    </nav>
-    <!-- Nav End -->
+        </nav>
+        <!-- Nav End -->
+    </header>
+    <!-- Header End -->
 
-    <!-- hero Start -->
-    <div class="hero">
-        <div class="hero_content">
+    <main>
+        <!-- intro Start -->
+        <section class="intro">
             <h1>Welcome to my Page</h1>
-            <h2>This is a simple landing page built by me.</h2>
-            <button onclick="window.location.href='#about_content'">Click Me</button>
-        </div>
-    </div>
-    <!-- Hero End -->
+            <h3>This is a simple landing page, which show the basic use of 
+                <span style="color: red;">HTML</span>,
+                <span style="color: blue;">CSS</span> and 
+                <span style="color: rgb(208, 208, 26);">JavaScript.</span></h3>
+            <button>Click Me</button>
+        </section>
+        <!-- intro End -->
 
-    <!-- About Start -->
-    <div class="about">
-        <div class="about_content" id="about_content">
-            <img src="img/profile.png" alt="Profile picture.">
-            <p>Hi, I'm <b style="color: orangered;">Sagar Nepali</b></p>
-            <i><p>"I am learning to become a <b style="color: orangered;">Full-Stack Developer</b>"</p></i>   
-        </div>
-    </div>
-    <!-- About End -->
+        <!-- About Start -->
+        <section class="about" id="about_content">
+            <div class="about_content">
+                <div class="right_content">
+                    <img src="img/profile.png" alt="Profile picture.">
+                </div>
+                <div class="left_content">
+                    <h4>Hi, I'm <span style="color: rgb(2, 195, 2);">Sagar Nepali.</span></h4>
+                    <p>"I am learning to become a <span style="background-color: orangered; color: black;">Full-Stack Developer"</span></p>
+                </div>
+
+
+            </div>
+
+        </section>
+        <!-- About End -->
+    </main>
 
     <footer>
         <p>© 2025 Sagar Nepali</p>
     </footer>
+
+
 </body>
-<script src="main.js"></script>
+<script src="js/main.js"></script>
+
 </html>

@@ -1,0 +1,384 @@
+:root {
+    --primary-color: black;
+    --secondary-color: white;
+    --border: 1px solid blue;
+}
+
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Limelight", sans-serif;
+    font-style: normal;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    width: 100%;
+    height: 13vh;
+    /* border: var(--border); */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* header p, .navigation, a{
+    border: var(--border);
+} */
+
+.logo{
+    /* border: var(--border); */
+    height: 100%;
+    display: flex;
+    align-items: end;
+}
+
+.logo p{
+    /* border: var(--border); */
+    font-size: 4.5em;
+}
+
+#menu{
+    display: none;
+}
+
+.navigation {
+    width: 30%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    display: flex;
+    /* border: var(--border); */
+}
+
+a {
+    font-size: 1.5em;
+    color: black;
+    text-decoration: none;
+}
+
+.navigation button{
+    display: none;
+}
+
+/* Header End */
+
+/* MAIN Start */
+main {
+    width: 100%;
+    height: 100%;
+    /* border: var(--borderx); */
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* SECTION Intro Start */
+.intro {
+    width: 100%;
+    height: 50%;
+    /* border: var(--borderx); */
+    /* background-color: purple; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* .intro h1, 
+.intro h3, 
+.intro button{
+    border: var(--border);
+} */
+
+.intro h1 {
+    font-size: 6em;
+}
+
+.intro h3 {
+    font-size: 1.478em;
+}
+
+.intro button {
+    width: 69vw;
+    padding: 0.5em;
+    border: none;
+    border-radius: 10px;
+    /* button-inside-text */
+    font-size: 1em;
+    background-color: black;
+    color: white;
+}
+
+/* SECTION Intro End */
+
+/* SECTION About Start */
+.about {
+    width: 100%;
+    height: 50%;
+    border: var(--borderx);
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .about_content,
+.right_content,
+.left_content {
+    border: var(--border);
+} */
+
+.about_content {
+    width: 68%;
+    height: 35vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+/* .about img,
+.about h4,
+.about p {
+
+} */
+
+.about img {
+    border-radius: 50%;
+    width: 252px;
+    background-color: black;
+    border: 2px solid white;
+}
+
+.left_content {
+    width: 100%;
+    height: 50%;
+    background-color: black;
+}
+
+.about h4 {
+    padding: 1em 0px 0px 1em;
+    font-size: 2em;
+}
+
+.about p {
+    padding: 0.2em 0px 0px 1.4em;
+    font-size: 1.5em;
+}
+
+
+
+/* SECTION About End */
+/* MAIN End */
+
+/* Footer Start */
+footer {
+    width: 100%;
+    height: 2.5vh;
+    text-align: center;
+    background-color: rebeccapurple;
+    color: white;
+    font-size: 0.9em
+}
+
+/* Footer End */
+
+
+
+/* Mobile 1 */
+@media (max-width: 640px) {
+
+    /* adjust layout: stack sections, smaller text, hide nav links */
+    body {
+        /* background-color: red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    header{
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .logo p{
+        font-size: 7em;
+        background-color: black;
+        color: white;
+    }
+
+    /* side nav */
+    #menu{
+        width: 40px;
+        margin-right: 25px;
+        display: flex;
+    }
+
+    .navigation{
+        /* border: 1px solid red; */
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: end;
+        height: 10%;
+        position: fixed;
+        top: 100px;
+        right: 30px;
+        display: none;
+        /* background-color: yellow; */
+    }
+
+    a{
+        /* border: 1px solid yellow; */
+        width: 100%;
+        text-align: right;
+        padding: 0;
+        text-decoration: underline;
+        font-size: 1.3em;
+        /* background-color: red; */
+    }
+    /* Side nav End */
+
+    /* main{
+        border: var(--border);
+    } */
+    .intro h1{
+        font-size: 6em;
+        text-align: center;
+    }
+    .intro h3{
+        /* border: var(--border); */
+        text-align: center;
+        font-size: 0.8em;
+        margin-bottom: 10px;
+    }
+    .intro button{
+        width: 83vw;
+    }
+    
+    .about{
+        height: 50%;
+    }
+
+    .about_content{
+        /* border: var(--border); */
+        width: 85%;
+        justify-content: space-evenly;
+    }
+}
+
+
+
+/* Mobile 2*/
+@media (max-width: 500px) {
+
+    /* adjust layout: stack sections, smaller text, hide nav links */
+    .logo p{
+        font-size: 5em;
+    }
+
+    /* side nav */
+    .navigation{
+        /* border: 1px solid red; */
+        top: 70px;
+        /* background-color: yellow; */
+    }
+
+    /* Side nav End */
+
+    .intro h1{
+        font-size: 4em;
+    }
+    .intro h3{
+        /* border: var(--border); */
+        font-size: 0.6em;
+    }
+
+    .about_content{
+        /* border: var(--border); */
+        width: 80%;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+/* 
+    .about img,
+    .about h4,
+    .about p {
+        border: var(--border);
+    } */
+    .about_content img{
+        width: 150px;
+        /* border: var(--border); */
+    }
+    .about h4{
+        font-size: 1em;
+        text-align: center;
+        padding: 0 0 5px 0;
+    }
+    .about p{
+        font-size: 1em;
+        padding: 0;
+        text-align: center;
+    }
+}
+
+/* Tablet */
+@media (min-width: 641px) and (max-width: 1024px) {
+
+    /* tweak font-size, image width, etc. */
+    body {
+        /* background-color: green; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    .navigation{
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .intro h1{
+        font-size: 5em;
+    }
+    .intro h3{
+        /* border: var(--border); */
+        text-align: center;
+        font-size: 1.2em;
+    }
+    .intro button{
+        width: 83vw;
+    }
+
+}
+
+@media screen and (min-width: 1025px) {
+    /* body{
+        background-color: firebrick;
+    } */
+
+    a:hover{
+        text-decoration: underline;
+        color: orangered;
+    }
+    .intro button:hover{
+        background-color: orangered;
+        transition: background-color 1s ease-out;
+    }
+    .about img:hover{
+        box-shadow: 0 0 50px orangered;
+        transition: box-shadow 1.2s ease-in-out;
+    }
+}
